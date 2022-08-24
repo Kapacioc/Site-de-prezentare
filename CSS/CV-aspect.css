@@ -1,0 +1,238 @@
+:root{
+    --culoareFundal: hsl(213, 18%, 25%);
+    --culoareLinii: #449399;
+    --textColor: #fff;
+    --gri:#425061;
+    --griInchis:#222a33;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* aici incepe navigatia */
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--griInchis);
+    transition: width 200ms ease;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 20rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item{
+    width: 100%;
+    
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--textColor);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms;
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background-color: #425061;
+}
+.link-text{
+    display: none;
+    margin-left: 0.5rem;
+}
+.nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    transform:scale(1.5);
+}
+.navbar:hover{
+    width: 13em;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+i{
+    color:#449399;
+    transition: 600ms;
+    
+}
+/* aici se termina navigatia */
+
+body{
+    background-color: var(--culoareFundal);
+    
+}
+
+#Profil{
+    max-width: 12%;
+    position: relative;
+    left: 40%;
+    bottom: 4.8em;
+    border: 0.3rem solid var(--culoareLinii);
+    border-radius: 50%;
+    
+    
+}
+
+
+
+
+.partea1 {
+    background-color:var(--gri);
+    color:var(--textColor);
+    text-align: center;
+    margin:0rem auto 0 ;
+    width: 47%;
+    min-width: 30%;
+    height: 8em;
+    font-size: 110%;
+
+   
+    
+}
+.partea1 p{
+    margin-top: 1rem;
+    margin-left: 0.5em;
+    width: 82%;
+    min-height: 30%;
+}
+
+.partea2 {
+    
+    background-color:var(--griInchis);
+    color:#fff;
+    margin: 0 auto 0;
+    width: 47%;
+    max-height: 4em;
+    position: relative;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+
+.stanga{
+    
+    position: inherit;
+    left: 0.5rem;
+    
+
+}
+
+.dreapta{
+    text-align: right;
+    position: inherit;
+    bottom: 2.6rem;
+    right: 0.5rem;
+    
+}
+
+
+.alb{
+    background-color: var(--textColor);
+    margin: 0 auto 0;
+    width: 47%;
+    height: 50rem;
+    position: relative;
+    padding: 1em;
+    font-size: 85%;
+}
+
+.alb h2{
+    color: var(--culoareLinii);
+    text-decoration: underline;
+}
+.alb h3 {
+    margin-top: 0.8em;
+}
+
+.alb h4{
+    font-weight: normal;
+}
+.alb p{
+    width: 33%;
+    font-size: 85%;
+}
+
+.alb #col , #sh{
+    margin-top: 0.3em;
+}
+
+.studies{
+    width: 23%;
+}
+
+
+
+
+.abilitati{
+    position: relative;
+    left: 59%;
+    bottom:53em;
+    
+    display: grid;
+    grid-template-columns:  12% 13% 12%;
+    grid-template-areas: "header header header";
+    
+    row-gap: 0.7rem;
+    column-gap: 0.6rem;
+    max-width: 100rem;
+    
+}
+.abilitati h2{
+    grid-area: header;
+    margin-bottom: 2%;
+    text-align: left;
+}
+.paragraf {
+    background-color: #989da6;
+    color: var(--textColor);
+    padding: 5%;
+    font-size: 85%;
+    white-space: nowrap;
+    border-radius: 4px;
+    
+    box-shadow: black 3px 2px 6px;
+ }
+
+ .certificate{
+    position: relative;
+    left:59%;
+    bottom:52em;
+    
+ }
+
+ .limbi{
+    position: relative;
+    left:59%;
+    bottom:51em;
+ }
+
+ .interese{
+    position: relative;
+    left: 59%;
+    bottom:50em;
+    
+    display: grid;
+    grid-template-columns:  11% 8% 10%;
+    grid-template-areas: "header header header";
+    row-gap: 0.7rem;
+    column-gap: 0.6rem;
+    max-width: 100rem;
+    
+ }
+ .interese h2{
+    grid-area: header;
+    margin-bottom: 2%;
+    text-align: left;
+ }
+ 
